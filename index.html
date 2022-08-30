@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    
+    <header>
+        <p style="text-align:center"><font size="28">Encriptador</font></p>
+    </header>
+    <main>
+        <div class="cuadrado"></div>
+        <section>
+            <textarea class="input-texto"
+            cols="40" rows="6"
+            placeholder="Ingrese el texto aqui"></textarea>
+
+            <div class="icon"></div>
+        
+            <p class="texto">Solo letras minúsculas y sin acentos</p>
+            
+            <div class="botones">
+
+                <button class="refrescar" onclick="refrescar()">
+                    Refrescar
+                </button>
+                <button class="encriptar" onclick="btnEncriptar()">
+                    Encriptar
+                </button>
+                <button class="desencriptar" onclick="btnDesencriptar()">
+                    Desencriptar
+                </button>
+            </div>
+        </section>
+
+        <section>
+            <textarea class="mensaje"
+            cols="18" rows="8"></textarea>
+            <div id = "img" class="image">
+                <img src="/imagenes/chica.png" width="320" height="350">
+            </div>
+            <div id = "ningun" class ="alerta">Ningun mensaje fue encontrado</div>
+            <div class="boton">
+            <button class="copiar" onclick = "copiar()">Copiar</button>
+            </div>
+        </section>
+        
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
